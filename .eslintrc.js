@@ -5,8 +5,11 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:vue/recommended',
+    'plugin:nuxt/recommended',
+    "plugin:prettier/recommended"
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -28,6 +31,8 @@ module.exports = {
     'prefer-const': 'off',
     'require-await': 'off',
     'vue/max-attributes-per-line': 'off',
-    'vue/no-unused-components': 'off'
+    'vue/no-unused-components': 'off',
+    "vue/multi-word-component-names": "off",
+    "vue/no-multiple-template-root": "off",
   },
 };

@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "a Nuxt 3 starter template or boilerplate with a lot of useful features.",
   "author": "dallington",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dallington/nuxt3-starter/blob/main/package.json"
+  },
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",

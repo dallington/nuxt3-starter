@@ -1,6 +1,16 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Minimal Starter 
+
+> WARNING
+Nuxt 3 is still in beta and is not recommended for production use.
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+
+## Features
+- [x] Eslint
+- [x] Stylelint
+- [x] Prettier
+- [x] Commitlint
+- [x] Husky & lint-staged
 
 ## Setup
 

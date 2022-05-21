@@ -1,10 +1,18 @@
 {
+  "name": "nuxt3-dall-starter",
+  "version": "1.0.0",
+  "description": "a Nuxt 3 starter template or boilerplate with a lot of useful features.",
+  "author": "dallington",
+  "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs",
+    "postinstall": "husky install",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",
@@ -16,7 +24,14 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-vue": "^9.0.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "nuxt": "3.0.0-rc.3",
     "prettier": "2.6.2"
+  },
+  "lint-staged": {
+    "**/*.{js,ts,vue,html,css,scss}": [
+      "npm run lintfix"
+    ]
   }
 }
